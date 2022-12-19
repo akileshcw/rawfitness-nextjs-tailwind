@@ -1,0 +1,20 @@
+﻿TEMPLATE ID,TELEMARKETER,TEMPLATE NAME,TYPE,HEADER,CATEGORY,REGISTERED DLT,REQUESTED ON,STATUS DATE,BLACKLISTED BY,APPROVAL STATUS,STATUS,TEMPLATE MESSAGE,CONSENT TYPE,REASON
+'1507167143178015282',--,Pongal Holidays,Service-Explicit,RAWCBE,--,MTNL,19-Dec-2022 12:06:20,19-Dec-2022 12:08:52, --,Approved,Active,Hello. Greeting from RAW FITNESS! We are closed from {#var#} to {#var#} due to {#var#}. Happy Pongal to you all! இனிய பொங்கல் நல்வாழ்த்துக்கள். பொங்கல் இனிதே பொங்கட்டும் . Thank you!,Explicit,--
+'1507167143164729487',--,Gym Closed From,Service-Explicit,RAWCBE,--,MTNL,19-Dec-2022 12:04:07,19-Dec-2022 12:08:55, --,Approved,Active,Hello. Greetings from RAW FITNESS! We are closed from {#var#} to {#var#} due to {#var#}. We regret the inconvenience. Thank you!,Explicit,--
+'1507167143156638508',--,Gym Closed ON,Service-Explicit,RAWCBE,--,MTNL,19-Dec-2022 12:02:46,19-Dec-2022 12:08:58, --,Approved,Active,Hello Members. Greetings from RAW FITNESS! We are closed on {#var#} due to {#var#}. We regret your inconvenience. Thank you!,Explicit,--
+'1507166367992538792',--,Serial ID with expiry Date,Service-Explicit,RAWCBE,--,MTNL,20-Sep-2022 18:48:45,19-Dec-2022 12:09:01, --,Approved,Active,Hello {#var#}. This is your serial ID:{#var#}. You have subscribed to {#var#} on {#var#}. Your plan expires on {#var#}. RAW FITNESS! Thank you!,Explicit,Brand name missing or not matched with Entity Name
+'1507166243647891004',--,Serial ID Notice,Service-Implicit,RAWCBE,--,MTNL,06-Sep-2022 09:24:39,20-Sep-2022 18:40:47, --,Approved,Active,"Hello {#var#}. Thanks for being a part of Raw Fitness! Please note your serial ID:{#var#} for future reference. Also, note your expiry date:{#var#}. Thank you!",Implicit,This may be a promotional/service template.
+'1507164973867703338',--,Tamil New Year Holiday Info,Service-Explicit,RAWCBE,--,MTNL,12-Apr-2022 10:14:37,12-Apr-2022 10:42:19, --,Approved,Active,"RAW FITNESS wishes you Happy Tamil New Year. We are closed on April 14,2022! Please follow us on instagram.com/raw_fitness_cbe.",Explicit,--
+'1507164965184257410',--,Collect Balance Fees,Service-Explicit,RAWCBE,--,MTNL,11-Apr-2022 10:07:23,11-Apr-2022 13:46:15, --,Approved,Active,"Hello {#var#}! Your payment of Rs.{#var#}/- has been received. Thanks, RAW FITNESS,{#var#}. 
+Get Fit! Stay Fit!",Explicit,--
+'1507164939360904988',--,New Enquiry 1,Service-Explicit,RAWCBE,--,MTNL,08-Apr-2022 10:23:29,08-Apr-2022 11:25:31, --,Approved,Active,"Hello {#var#}, Thanks for visiting RAW FITNESS. Please call at {#var#} or {#var#}.
+Follow us at instagram.com/raw_fitness_cbe
+ Get Fit! Stay Fit!",Explicit,--
+'1507164939246750732',--,Expiration Reminder 1,Service-Explicit,RAWCBE,--,MTNL,08-Apr-2022 10:04:28,08-Apr-2022 11:24:23, --,Approved,Active,"Hello {#var#}, your package {#var#} is expiring on {#var#}. Please renew soon.
+RAW FITNESS.
+Get Fit! Stay Fit!",Explicit,--
+'1507164856158745066',--,birthday wishes,Service-Explicit,RAWCBE,--,MTNL,29-Mar-2022 19:16:27,29-Mar-2022 20:41:03, --,Approved,Active,Wishing you a Very Happy Birthday {#var#}..Warm Wishes from RAW FITNESS. GET FIT! STAY FIT!,Explicit,--
+'1507164856151694491',--,pending payment,Service-Explicit,RAWCBE,--,MTNL,29-Mar-2022 19:15:17,29-Mar-2022 20:41:07, --,Approved,Active,"Hello {#var#}, your package {#var#} has been pending Rs {#var#}/- Please pay it soon! Thank you
+RAW FITNESS",Explicit,--
+'1507164856132715562',--,add new fees,Service-Explicit,RAWCBE,--,MTNL,29-Mar-2022 19:12:07,29-Mar-2022 20:41:11, --,Approved,Active,"Hello {#var#}! Your payment of Rs.{#var#} has been received. Your membership expires on {#var#}. Thanks, RAW FITNESS",Explicit,--
+'1507164855810004279',--,renew it,Service-Explicit,RAWCBE,--,MTNL,29-Mar-2022 18:18:20,29-Mar-2022 18:55:37, --,Approved,Active,"Hello {#var#}, your package expired on {#var#}.Please renew to avail continous service, RAW FITNESS.",Explicit,Rejected -This is a Service explicit/promotional template.
