@@ -7,4 +7,44 @@
         @apply px-4 py-2 border-4 border-orange-500 rounded-lg text-orange-500 hover:bg-orange-500 hover:text-white hover:scale-110 transition duration-300 active:scale-95;
         
     }
+
+    .nav-logo-header {
+        @apply text-xl font-extrabold tracking-wider px-2 text-transparent bg-clip-text bg-gradient-to-br from-orange-500 to-pink-500
+    }
+
+    .mobile-nav-button {
+        @apply flex w-1/2 items-center space-x-4 justify-center border-2 border-orange-500 rounded-lg px-2 py-4 hover:bg-orange-500 hover:text-white
+    }
+
+    .mobile-nav-item {
+        @apply flex w-1/2 items-center space-x-2 justify-center px-2 border-b-orange-500 hover:bg-orange-500 hover:text-white
+    }
+    .nav-indivudual-item {
+        @apply hover:underline hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 cursor-pointer hover:decoration-2 rounded-lg
+    }
+
+    
+    .form-group {
+        @apply flex flex-col space-y-4 justify-start py-2 px-4
+    }
+
+    .form-group-row {
+        @apply flex space-y-4 justify-start py-2 px-4
+    }
+
+    .form-indivudual-header {
+        @apply text-xl font-semibold
+    }
+
+    .input-element {
+        @apply focus:outline-orange-500 focus:outline-4 lg:p-4 border-2 border-orange-300 rounded-lg text-lg font-normal
+    }
+
+    .radioBtn-label {
+        @apply text-lg font-medium
+    }
+    
+    .radioBtn-group {
+        @apply flex space-x-1
+    }
 }
