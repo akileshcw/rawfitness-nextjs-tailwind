@@ -30,22 +30,22 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full bg-white z-20">
-      <nav className="bg-white shadow-lg w-full h-20 flex items-center px-3 mb-2 justify-between lg:max-w-7xl lg:mx-auto sm:mx-auto rounded-lg z-20">
+    <div className="w-full z-20 absolute top-2">
+      <nav className="nav-parent">
         {/* -------------------- LOGO AND LOGO TEXT --------------------------*/}
         <div className="flex items-center hover:scale-110 transition duration-300 active:scale-90">
           <BeakerIcon className="h-6 w-6 text-orange-500" />
           <h1 className="nav-logo-header">Raw Fitness</h1>
         </div>
         <div>
-          <ul className="lg:flex space-x-7 text-lg font-semibold hidden">
+          <ul className="lg:flex space-x-7 text-lg font-semibold hidden text-white items-center">
             {navBarItems.map((navBarItem) => (
               <div
                 key={navBarItem.id}
                 className="flex space-x-2 py-4 rounded-lg"
                 onClick={(e) => {
                   e.preventDefault;
-                  router.push(navBarItem.href)
+                  router.push(navBarItem.href);
                 }}
               >
                 {navBarItem.icon}
@@ -57,15 +57,17 @@ function Navbar() {
         <div>
           <ul className="lg:flex space-x-4 font-semibold hidden">
             <li>
-              <div className="flex space-x-2 cursor-pointer py-3 border-4 rounded-lg px-2 border-orange-500 hover:bg-orange-500 hover:text-white hover:scale-110 transition duration-300 active:scale-95" onClick={(e) => {
-                e.preventDefault;
-                router.push('/signIn')
-              }}>
+              <div
+                className="flex space-x-2 cursor-pointer py-3 border-4 text-white rounded-lg px-2 border-orange-500 hover:bg-orange-500 hover:text-white hover:scale-110 transition duration-300 active:scale-95"
+                onClick={(e) => {
+                  e.preventDefault;
+                  router.push("/signIn");
+                }}
+              >
                 <UserPlusIcon className="w-6 h-6 text-orange-500 hover:text-white" />
                 <h3>Sign in</h3>
               </div>
             </li>
-            
           </ul>
         </div>
         {/* --------------------------- MOBILE NAVIGATION MENU ---------------------------*/}
@@ -78,7 +80,7 @@ function Navbar() {
           ) : (
             <Bars3Icon className="h-6 w-6 text-orange-500" />
           )}
-          <h2 className="text-lg font-bold tracking-wider px-2 ">Menu</h2>
+          <h2 className="text-lg font-bold tracking-wider px-2 text-white">Menu</h2>
         </div>
       </nav>
       {/* -----------------------MOBILE NAVIGATION DRAWER ------------------------ */}

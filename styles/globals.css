@@ -5,15 +5,21 @@
 @layer components {
     .btn-main {
         @apply px-4 py-2 border-4 border-orange-500 rounded-lg text-orange-500 hover:bg-orange-500 hover:text-white hover:scale-110 transition duration-300 active:scale-95;
-        
     }
 
+    .text-gradient {
+        @apply text-transparent bg-clip-text bg-gradient-to-br from-orange-500 to-pink-500
+    }
     .nav-logo-header {
         @apply text-xl font-extrabold tracking-wider px-2 text-transparent bg-clip-text bg-gradient-to-br from-orange-500 to-pink-500
     }
 
     .mobile-nav-button {
         @apply flex w-1/2 items-center space-x-4 justify-center border-2 border-orange-500 rounded-lg px-2 py-4 hover:bg-orange-500 hover:text-white
+    }
+
+    .nav-parent {
+        @apply bg-transparent shadow-lg w-full h-20 flex items-center px-3 mb-2 justify-between lg:max-w-7xl lg:mx-auto sm:mx-auto rounded-lg z-20 hover:border-2 hover:border-orange-400 transition duration-300
     }
 
     .mobile-nav-item {
