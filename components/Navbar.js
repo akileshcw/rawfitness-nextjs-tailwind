@@ -33,7 +33,12 @@ function Navbar() {
     <div className="w-full z-20 absolute top-2">
       <nav className="nav-parent">
         {/* -------------------- LOGO AND LOGO TEXT --------------------------*/}
-        <div className="flex items-center hover:scale-110 transition duration-300 active:scale-90">
+        <div
+          className="flex items-center hover:scale-110 transition duration-300 active:scale-90 cursor-pointer"
+          onClick={() => {
+            router.push("/");
+          }}
+        >
           <BeakerIcon className="h-6 w-6 text-orange-500" />
           <h1 className="nav-logo-header">Raw Fitness</h1>
         </div>
@@ -42,7 +47,7 @@ function Navbar() {
             {navBarItems.map((navBarItem) => (
               <div
                 key={navBarItem.id}
-                className="flex space-x-2 py-4 rounded-lg"
+                className="flex space-x-2 py-4 rounded-lg hover:scale-110 transition duration-300 active:scale-95 text-gradient"
                 onClick={(e) => {
                   e.preventDefault;
                   router.push(navBarItem.href);
@@ -80,7 +85,9 @@ function Navbar() {
           ) : (
             <Bars3Icon className="h-6 w-6 text-orange-500" />
           )}
-          <h2 className="text-lg font-bold tracking-wider px-2 text-white">Menu</h2>
+          <h2 className="text-lg font-bold tracking-wider px-2 text-white">
+            Menu
+          </h2>
         </div>
       </nav>
       {/* -----------------------MOBILE NAVIGATION DRAWER ------------------------ */}

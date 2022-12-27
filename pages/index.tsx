@@ -4,6 +4,7 @@ import Head from 'next/head'
 
 import Navbar from './../components/Navbar';
 import HeroSection from './../components/HeroSection';
+import LandingPageSection2 from './../components/LandingPageSection2';
 
 
 
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <main className='w-full h-screen'>
         <Navbar />
         <HeroSection />
+        <LandingPageSection2 />
       </main>
     </>
   );
