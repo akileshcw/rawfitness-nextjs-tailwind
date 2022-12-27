@@ -19,21 +19,22 @@ const HeroSection = () => {
           <Image
             src={headerImage1}
             alt="This is the hero section"
-            fill={true}
             layout="responsive"
             className="grayscale absolute"
           />
         </div>
-        <div className="absolute w-1/3 top-1/4 left-1/4 space-y-10">
-          <h1 className="text-6xl font-semibold tracking-wider text-white">
+        <div className="max-w-5xl absolute w-1/3 top-[150px] left-1/4 space-y-10">
+          <h1 className="xl:text-[78px] md:text-[48px] font-bold text-white">
             Get past your <span className="text-gradient">lazines</span>.
           </h1>
-          <h1 className="text-6xl font-semibold tracking-wider text-white">
+          <h1 className="sxl:text-[78px] md:text-[48px] font-bold text-white">
             Your <span className="text-gradient">fitness companion</span> is
             here
           </h1>
-          <h1 className="text-7xl font-bold text-white">Welcome to </h1>
-          <h1 className="text-7xl font-bold text-gradient tracking-widest">
+          <h1 className="xl:text-[78px] md:text-[48px] font-bold text-white">
+            Welcome to{" "}
+          </h1>
+          <h1 className="xl:text-[78px] md:text-[48px] font-bold  text-gradient">
             Raw Fitness{" "}
           </h1>
           <button

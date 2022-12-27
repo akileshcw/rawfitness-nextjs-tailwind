@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 import { navBarItems } from './../utils/constants';
 
+
 import {
   BeakerIcon,
   Bars3Icon,
@@ -94,27 +95,24 @@ function Navbar() {
       {isNavbarClick ? (
         <div className="flex flex-col items-center space-y-2 mb-4 lg:hidden">
           {!user ? (
-            <div className="mobile-nav-button">
+            <div className="mobile-nav-button" onClick={() => {router.push("/signIn")}}>
               <UserPlusIcon className="w-6 h-6 text-orange-500" />
-              <h3 className="text-xl font-medium">Sign In</h3>
+              <h3 className="text-xl font-medium text-gradient">Sign In</h3>
             </div>
           ) : null}
-          <div className="mobile-nav-item">
-            <HomeIcon className="w-6 h-6 text-orange-500" />
-            <h3 className="text-lg font-medium">Home</h3>
-          </div>
-          <div className="mobile-nav-item">
-            <ListBulletIcon className="w-6 h-6 text-orange-500" />
-            <h3 className="text-lg font-medium">Features</h3>
-          </div>
-          <div className="mobile-nav-item">
-            <CurrencyDollarIcon className="w-6 h-6 text-orange-500" />
-            <h3 className="text-lg font-medium">Pricing</h3>
-          </div>
-          <div className="mobile-nav-item">
-            <PhoneIcon className="w-6 h-6 text-orange-500" />
-            <h3 className="text-lg font-medium">Contact US</h3>
-          </div>
+          {navBarItems.map((item) => (
+            <div
+              className="mobile-nav-item"
+              key={item.id}
+              onClick={() => {
+                router.push(`${item.href}`);
+              }}
+            >
+              {item.icon}
+              <h3 className="text-lg font-medium text-gradient">{item.title}</h3>
+            </div>
+          ))}
+
           {user ? (
             <div className="mobile-nav-button">
               <UserMinusIcon className="w-6 h-6 text-orange-500" />

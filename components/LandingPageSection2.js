@@ -2,32 +2,24 @@ import React from "react";
 
 import { motion } from "framer-motion";
 
-import { FaDumbbell,FaHeartPulse } from "react-icons/fa";
+import { FaDumbbell, FaHeartbeat } from "react-icons/fa";
 import { useRouter } from "next/router";
 
 const LandingPageSection2 = () => {
   const router = useRouter();
-  const springs = useSpring({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-    duration: 2000,
-  });
+
 
   return (
     <>
       <section className="grid lg:grid-cols-2 sm:grid-cols-1 h-1/2 w-full snap-y snap-mandatory snap-start snap-always">
         <motion.div
           className="bg-gradient-to-r from-orange-200 to-pink-500 flex hover:bg-gray-100"
-          style={springs}
+          
         >
           <div className="grid grid-rows-3 gap-5 mx-14">
             <div className="flex space-x-5 items-center">
               <div className="hover:rotate-45 transition duration-300">
-                <FaHeartPulse
+                <FaHeartbeat
                   className="text-black h-16 w-16"
                 />
               </div>
@@ -63,7 +55,7 @@ const LandingPageSection2 = () => {
         </motion.div>
         <motion.div
           className="bg-gradient-to-r from-gray-200 to-gray-500 flex hover:bg-gray-100"
-          style={springs}
+          
         >
           <div className="grid grid-rows-3 gap-5 mx-14">
             <div className="flex space-x-5 items-center">
